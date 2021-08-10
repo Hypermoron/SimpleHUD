@@ -36,7 +36,8 @@ public class Display {
                                         canSeeCoords = true;
                                     }
                                 } else if (plugin.getConfig().getBoolean("coords.require-compass-in-inv")) {
-                                    if (player.getInventory().contains(Material.COMPASS)) {
+                                    if (player.getInventory().contains(Material.COMPASS) ||
+                                            player.getInventory().getItemInOffHand().getType().equals(Material.COMPASS)) {
                                         canSeeCoords = true;
                                     }
                                 } else {
@@ -55,7 +56,8 @@ public class Display {
                                         canSeeTime = true;
                                     }
                                 } else if (plugin.getConfig().getBoolean("time.require-clock-in-inv")) {
-                                    if (player.getInventory().contains(Material.CLOCK)) {
+                                    if (player.getInventory().contains(Material.CLOCK) ||
+                                            player.getInventory().getItemInOffHand().getType().equals(Material.CLOCK)) {
                                         canSeeTime = true;
                                     }
                                 } else {
