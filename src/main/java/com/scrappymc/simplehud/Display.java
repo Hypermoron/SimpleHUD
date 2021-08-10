@@ -18,7 +18,7 @@ public class Display {
                     // Skips all players in the world if it is blacklisted/not whitelisted
                     if (plugin.getConfig().getBoolean("worlds.limit-worlds")
                             && (plugin.getConfig().getStringList("worlds.whitelist").contains(world.getName())
-                                ^ plugin.getConfig().getBoolean("worlds.blacklist-mode"))) {
+                                == plugin.getConfig().getBoolean("worlds.blacklist-mode"))) {
                         continue;
                     }
 
