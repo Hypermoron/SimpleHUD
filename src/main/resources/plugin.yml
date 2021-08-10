@@ -1,0 +1,24 @@
+name: SimpleHUD
+version: 1.0
+main: com.scrappymc.simplehud.SimpleHUD
+api-version: 1.17
+authors: [ Hypermoron ]
+description: Implements a configurable HUD in the actionbar.
+
+commands:
+  hudreload:
+    description: "Reloads the heads-up display configuration."
+    usage: "/hudreload"
+    permission: hud.reload
+
+permissions:
+  hud.coords:
+    default: true
+  hud.coords.override:
+    default: false
+  hud.time:
+    default: true
+  hud.time.override:
+    default: false
+  hud.reload:
+    default: op

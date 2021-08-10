@@ -1,0 +1,24 @@
+# Ticks between HUD updates
+update-interval: 5
+
+time:
+  enabled: true
+  color: WHITE
+  require-clock-in-inv: true
+  require-clock-in-hand: false
+
+coords:
+  enabled: true
+  intercardinal-directions: true
+  letter-color: GOLD
+  number-color: GRAY
+  require-compass-in-inv: true
+  require-compass-in-hand: false
+
+worlds:
+  limit-worlds: false
+  whitelist:
+    - world
+    - world_nether
+    - world_the_end
+  blacklist-mode: false
